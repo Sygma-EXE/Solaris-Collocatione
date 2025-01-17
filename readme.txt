@@ -54,4 +54,10 @@ Attention: les librairies doivent être téléchargés afin d'assurer le bon fon
             - PySide6 (et ses add-ons si ne fonctionne toujours pas)
             - folium
 
-N'hésitez pas à nous contacter au besoin.
+Pour la lecture de la carte:
+>rouge: extrêmement déconseillé
+>orange: déconseillé
+>jaune: acceptable
+>vert clair: favorable
+>vert foncé: très favorable
+>bleu: asbence de donnée(s) utile(s)

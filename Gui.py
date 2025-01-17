@@ -40,8 +40,8 @@ class SimpleGUI(QWidget):
         layout.addWidget(self.image_label)
 
         #day(s) since last update
-        self.label = QLabel("Last files update: "+ str(dayupdate)+" day(s) ago")
-        layout.addWidget(self.label)
+        self.labelupdate = QLabel("Last files update: "+ str(dayupdate)+" day(s) ago")
+        layout.addWidget(self.labelupdate)
 
         #button for the html map
         self.map_button = QPushButton("Generate and open map", self)
@@ -85,6 +85,7 @@ class SimpleGUI(QWidget):
         
         elif result == 1: #if maj done (code 1)
             self.show_popup("SC Update System","Update Done")
+            self.labelupdate.setText("Last files update: 0 day(s) ago")
         
         elif result == 3: #if error (code 3)
             self.show_popup("SC Update System","Error")
